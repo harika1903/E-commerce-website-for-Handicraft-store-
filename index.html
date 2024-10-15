@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive ecommerce website</title>
+    
+    <link rel="stylesheet" href="style.css" media="screen" type="text/css" />
+    
+    
+    <!-- icons -->    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    
+    <script type="text/javascipt" src="script.js"></script>
+	
+</head>
+<body>
+    <!-- navbar-->
+    <section class="headofweb">
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="Logo">
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#Products">Products</a></li>
+                <li><a href="#FestivalSpecial">Festival Special</a></li>
+                <li><a href="#HomeDecor">Home Decor</a></li>
+                <div class="dropdown">
+                    <button class="dropbtn">Places</button>
+                    <div class="dropdown-content">
+                      <a href="#Telangana">Telangana</a>
+                      <a href="#Gujarat">Gujarat</a>
+                      <a href="#Assam">Assam</a>
+                      <a href ="#Jaipur">Jaipur</a>
+                    </div>
+                  </div>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="#" id="search-icon"><i class="fas fa-search"></i></a>
+                <div id="search-box">
+                    <input type="search" name="" id="search-input" placeholder="Search Here...">
+                </div>
+
+                <a href="#" id="user-icon"><i class="fas fa-user"></i></a>
+               <div class="user" id="user-box" style="display: none;">
+                   <h2>Login Now</h2>
+                   <input type="email" id="email" placeholder="Your Email...">
+                   <input type="password" id="password" placeholder="Password">
+                   <input type="submit" value="Login" class="login-btn" id="login-btn">
+                   <p>Forget Password <a href="#">Reset Now</a></p>
+                   <p>Don't have an account? <a href="#">Create a new account</a></p>
+               </div>
+               
+               <a href="#" id="cart-icon"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a>
+            </div>
+        </nav>
+    </section>
+
+    <!-- home section starts -->
+    <section class="Home" id="Home">
+       <div class="main" id="logo">
+            <div class="text">
+                <h4>WELCOME TO THE THE WORLD OF</h4>
+                <h1>INDIAN HANDICRAFT PRODUCTS</h1>
+            </div>
+          <div class="buttoncontainer">
+                <a href="#Products" class="btn1">EXPLORE</a>
+            </div>
+    
+            <img src="image/home.png" alt="">
+           
+        </div>
+</section>
+<div class="horizontal-line1"></div>
+   
+
+<section>
+<div class="Craft1" id="Products">
+    <div class="head1">
+        <h1>Our <span>Product</span></h1>
+    </div>
+    <div class="shop">
+        <div class="card" data-name="Eco friendly basket" data-price="350">
+            <img src="image/eco.webp" alt="">
+            <h3>Eco friendly basket</h3>
+            <span>Rs. 350</span>
+            <div class="btn-container">
+                <a href="#" class="btn add-to-cart">ADD TO CART</a>
+            </div>                
+        </div>
+
+        <div class="card" data-name="Iron coated Decor" data-price="500">
+            <img src="image/decor.webp" alt="">
+            <h3>Iron coated Decor</h3>
+            <span>Rs. 500</span>
+            <div class="btn-container">
+                <a href="#" class="btn add-to-cart">ADD TO CART</a>
+            </div>                
+        </div>
+
+        <div class="card" data-name="Lamp set" data-price="500">
+            <img src="image/lamp.jpeg" alt="">
+            <h3>Lamp set</h3>
+            <span>Rs. 500</span>
+            <div class="btn-container">
+                <a href="#" class="btn add-to-cart">ADD TO CART</a>
+            </div>                
+        </div>
+
+        <div class="card" data-name="Toys" data-price="300">
+            <img src="image/toy.webp" alt="">
+            <h3>Toys</h3>
+            <span>Rs. 300</span>
+            <div class="btn-container">
+                <a href="#" class="btn add-to-cart">ADD TO CART</a>
+            </div>                
+        </div>
+
+        <div class="card" data-name="Jar set" data-price="550">
+            <img src="image/jarset.webp" alt="">
+            <h3>Jar set</h3>
+            <span>Rs. 550</span>
+            <div class="btn-container">
+                <a href="#" class="btn add-to-cart">ADD TO CART</a>
+            </div>                
+        </div>
+
+        <div class="card" data-name="Wall hanging" data-price="650">
+            <img src="image/hanging.jpg" alt="">
+            <h3>Wall hanging</h3>
+            <span>Rs. 650</span>
+            <div class="btn-container">
+                <a href="#" class="btn add-to-cart">ADD TO CART</a>
+            </div>                
+        </div>
+    </div>
+    <div class="horizontal-line2"></div>
+</div>
+</section>
+<section>
+        <div class="Craft2" id="HomeDecor">
+            <div class="head2">
+                <h1>Home <span>Decor</span></h1>
+            </div>
+    <div class="shop">
+         <div class="card" data-name="Wall Hanging" data-price="560">
+                    <img src="image/wall.jpg" alt="">
+                    <h3>Wall Hanging</h3>
+                    <span>Rs. 560</span>
+                    <div class="btn-container">
+                        <a href="#" class="btn add-to-cart">ADD TO CART</a>
+                    </div>                
+                </div>
+        <div class="card" data-name="Umbrella Lady doll set" data-price="1200">
+                    <img src="image/umbrella.webp" alt="">
+                    <h3>Umbrella Lady doll set</h3>
+                    <span>Rs. 1200</span>
+                    <div class="btn-container">
+                        <a href="#" class="btn add-to-cart">ADD TO CART</a>
+                    </div>                
+                </div>
+        <div class="card">
+                    <img src="image/jar.avif" alt="">
+                    <h3>Diy Jar</h3>
+                    <span>Rs. 950</span>
+                    <div class="btn-container">
+                        <a href="#" class="btn add-to-cart">ADD TO CART</a>
+                    </div>                
+                </div>
+          <div class="card" data-name="Paradise sardar set" data-price="1100">
+                    <img src="image/sardar.webp" alt="">
+                    <h3>Paradise sardar set</h3>
+                    <span>Rs. 1100</span>
+                    <div class="btn-container">
+                        <a href="#" class="btn add-to-cart">ADD TO CART</a>
+                    </div>                
+                </div>
+             <div class="card" data-name="Elephant Flower Pot" data-price="800">
+                     <img src="image/flower.jpg" alt="">
+                    <h3>Elephant Flower Pot</h3>
+                    <span>Rs. 800</span>
+                    <div class="btn-container">
+                        <a href="#" class="btn add-to-cart">ADD TO CART</a>
+                    </div>                
+                </div>
+             <div class="card" data-name="Fruits Basket" data-price="700">
+                    <img src="image/fruit.webp" alt="">
+                    <h3>Fruits Basket</h3>
+                    <span>Rs. 700</span>
+                    <div class="btn-container">
+                        <a href="#" class="btn">ADD TO CART</a>
+                    </div>                
+                </div>
+            </div>
+    <div class="horizontal-line2"></div>
+    </section>
+      <section>
+        <div class="Craft1" id="FestivalSpecial">
+            <div class="head2">
+                <h1>Festival <span>Special</span></h1>
+            </div>
+           <div class="shop">
+            <div class="card" data-name="Candle set" data-price="450">
+                    <img src="image/candle.jpg" alt="">
+                    <h3>Candle set</h3>
+                    <span>Rs. 450</span>
+                    <div class="btn-container">
+                        <a href="#" class="btn add-to-cart">ADD TO CART</a>
+                    </div>                
+                </div>
+             <div class="card" data-name="Peacock Urli bowl" data-price="1000">
+                     <img src="image/bowl.webp" alt="">
+                    <h3>Peacock Urli bowl</h3>
+                    <span>Rs. 1000</span>
+                    <div class="btn-container">
+                        <a href="#" class="btn add-to-cart">ADD TO CART</a>
+                    </div>                
+                </div>
+              <div class="card"data-name="Jewellery set" data-price="350" >
+                    <img src="image/jew.webp" alt="">
+                    <h3>Jewellery set</h3>
+                    <span>Rs. 350</span>
+                    <div class="btn-container">
+                        <a href="#" class="btn add-to-cart">ADD TO CART</a>
+                    </div>                
+                </div>
+               <div class="card" data-name="Golden polished decoration set" data-price="460">
+                     <img src="image/decoration.webp" alt="">
+                    <h3>Golden polished decoration set</h3>
+                    <span>Rs. 460</span>
+                    <div class="btn-container">
+                        <a href="#" class="btn add-to-cart">ADD TO CART</a>
+                    </div>                
+                </div>
+                <div class="card" data-name="Lord Ganesh statue" data-price="700">
+                    <img src="image/ganesh.webp" alt="">
+                    <h3>Lord Ganesh Statue</h3>
+                    <span>Rs. 700</span>
+                    <div class="btn-container">
+                        <a href="#" class="btn add-to-cart">ADD TO CART</a>
+                    </div>                
+                </div>
+                  <div class="card" data-nam="Lotus door banderwar" data-price="550">
+                    <img src="image/banderwar.jpg" alt="">
+                    <h3>Lotus door banderwar</h3>
+                    <span>Rs. 550</span>
+                    <div class="btn-container">
+                        <a href="#" class="btn">ADD TO CART</a>
+                    </div>                
+                </div>
+             </div>
+    <div class="horizontal-line2"></div>
+    </section>
+    <section>
+        <div class="Craft1" id="Telangana">
+            <div class="head2">
+                <h1><span>Telangana</span></h1>
+            </div>
+            <div class="shop">
+        <div class="card" data-name="Gadwal Handloom Saree" data-price="9250">
+                    <img src="image/gadwal.webp" alt="">
+                    <h3>Gadwal Handloom Saree</h3>
+                    <span>Rs. 9250</span>
+                    <div class="btn-container">
+                        <a href="#" class="btn add-to-cart">ADD TO CART</a>
+                    </div>                
+                </div>
+        <div class="card" data-name="Bidri Peafowl Showpiece" data-price="2500">
+                    <img src="image/pea.jpg" alt="">
+                    <h3>Bidri Peafowl Showpiece</h3>
+                    <span>Rs. 2500</span>
+                    <div class="btn-container">
+                        <a href="#" class="btn add-to-cart">ADD TO CART</a>
+                    </div>                
+                </div>
+        <div class="card" data-name="Cheriyal Painting" data-price="800">
+                    <img src="image/cheriyal.jpg" alt="">
+                    <h3>Cheriyal Painting</h3>
+                    <span>Rs. 800</span>
+                    <div class="btn-container">
+                        <a href="#" class="btn add-to-cart">ADD TO CART</a>
+                    </div>                
+                </div>
+         <div class="card" data-name="Lacquer Tea set" data-price="1200">
+                    <img src="image/lac.jpg" alt="">
+                    <h3>Lacquer Tea set</h3>
+                    <span>Rs. 1200</span>
+                    <div class="btn-container">
+                        <a href="#" class="btn add-to-cart">ADD TO CART</a>
+                    </div>                
+                </div>
+    
+                <div class="card"data-name="Banjara Needel craft" data-price="900">
+                    <img src="image/banjara.jpg" alt="">
+                    <h3>Banjara Needel craft</h3>
+                    <span>Rs. 900</span>
+                    <div class="btn-container">
+                        <a href="#" class="btn add-to-cart">ADD TO CART</a>
+                    </div>                
+                </div>
+        <div class="card" data-name="Pochampally Saree" data-price="22550">
+                   <img src="image/pochampally.jpeg" alt="">
+                    <h3>Pochampally Saree</h3>
+                    <span>Rs. 22550</span>
+                    <div class="btn-container">
+                        <a href="#" class="btn add-to-cart">ADD TO CART</a>
+                    </div>                
+                </div>
+            </div>
+      <div class="horizontal-line2"></div>
+    </section>
+    <section>
+        <div class="Craft2" id="Assam">
+            <div class="head2">
+                <h1><span>Assam</span></h1>
+            </div>
+     <div class="shop">
+        <div class="card" data-name="Handloom Men's Stole" data-price="560">
+                    <img src="image/scraft.jpg" alt="">
+                    <h3>Handloom Mens's Stole</h3>
+                    <span>Rs. 560</span>
+                    <div class="btn-container">
+                        <a href="#" class="btn add-to-cart">ADD TO CART</a>
+                    </div>                
+                </div>
+        <div class="card" data-name="Dokra art piece" data-price="800">
+                    <img src="image/dokra.webp"alt="">
+                    <h3>Dokra art piece</h3>
+                    <span>Rs. 800</span>
+                    <div class="btn-container">
+                        <a href="#" class="btn add-to-cart">ADD TO CART</a>
+                    </div>                
+                </div>
+        <div class="card" data-name="Bihu Art sculpture" data-price="1000">
+                    <img src="image/bihu.jpg" alt="">
+                    <h3>Bihu Art sculpture</h3>
+                    <span>Rs. 1000</span>
+                    <div class="btn-container">
+                        <a href="#" class="btn add-to-cart">ADD TO CART</a>
+                    </div>                
+                </div>
+                <div class="card" data-name="Cane Craft" data-price="360">
+                    <img src="image/cane.jpg" alt="">
+                    <h3>Cane Craft</h3>
+                    <span>Rs. 360</span>
+                    <div class="btn-container">
+                        <a href="#" class="btn add-to-cart">ADD TO CART</a>
+                    </div>                
+                </div>
+        <div class="card" data-name="Wood Craft" data-price="700">
+                    <img src="image/wood.jpg" alt="">
+                    <h3>Wood Craft</h3>
+                    <span>Rs. 700</span>
+                    <div class="btn-container">
+                        <a href="#" class="btn add-to-cart">ADD TO CART</a>
+                    </div>                
+                </div>
+        <div class="card" data-name="Bamboo Mug" data-price="800">
+                    <img src="image/mug.jpeg" alt="">
+                    <h3>Bamboo Mug</h3>
+                    <span>Rs. 800</span>
+                    <div class="btn-container">
+                        <a href="#" class="btn add-to-cart">ADD TO CART</a>
+                    </div>                
+                </div>
+          </div>
+    <div class="horizontal-line2"></div>
+    </section>
+    <section>
+        <div class="Craft1" id="Gujarat">
+            <div class="head2">
+                <h1><span>Gujarat</span></h1>
+            </div>
+    
+            <div class="shop">
+    
+                <div class="card" data-name="Carry Bag" data-price="350">
+                    <img src="image/carry bag.jpeg" alt="">
+                    <h3>Carry Bag</h3>
+                    <span>Rs. 350</span>
+                    <div class="btn-container">
+                        <a href="#" class="btn add-to-cart">ADD TO CART</a>
+                    </div>                
+                </div>
+                <div class="card"data-name="Copper Bell" data-price="500">
+                   <img src="image/bell.webp" alt="">
+                    <h3> Copper Bell</h3>
+                    <span>Rs. 500</span>
+                    <div class="btn-container">
+                        <a href="#" class="btn add-to-cart">ADD TO CART</a>
+                    </div>                
+                </div>
+               <div class="card" data-name="Patola Silk" data-price="1500">
+                   <img src="image/patola.jpg" alt="">
+                    <h3>Patola Silk</h3>
+                    <span>Rs. 1500</span>
+                    <div class="btn-container">
+                        <a href="#" class="btn add-to-cart">ADD TO CART</a>
+                    </div>                
+                </div>
+    
+                <div class="card" data-name="Sankheda Furniture" data-price="12000">
+                    <img src="image/sankheda.jpg" alt="">
+                    <h3>Sankheda Furiniture</h3>
+                    <span>Rs. 12000</span>
+                    <div class="btn-container">
+                        <a href="#" class="btn add-to-cart">ADD TO CART</a>
+                    </div>                
+                </div>
+    
+                <div class="card" data-name="Saree" data-price="1200">
+                    <img src="image/saree.jpeg" alt="">
+                    <h3>Saree</h3>
+                    <span>Rs. 1200</span>
+                    <div class="btn-container">
+                        <a href="#" class="btn add-to-cart">ADD TO CART</a>
+                    </div>                
+                </div>
+    
+                <div class="card"data-name="Jacket" data-price="550">
+                     <img src="image/jacket.jpeg" alt="">
+                    <h3>Jacket</h3>
+                    <span>Rs. 550</span>
+                    <div class="btn-container">
+                        <a href="#" class="btn add-to-cart">ADD TO CART</a>
+                    </div>                
+                </div>
+    </div>
+    <!--  Jump to next line  -->
+    <div class="horizontal-line2"></div>
+    </section>
+    <section>
+        <div class="Craft2" id="Jaipur">
+            <div class="head2">
+                <h1><span>Jaipur</span></h1>
+            </div>
+    
+            <div class="shop">
+    
+                <div class="card" data-name="Blue Pottery" data-price="800">
+                    <img src="image/bluepotery.jpeg" alt="">
+                    <h3>Blue Pottery</h3>
+                    <span>Rs. 800</span>
+                    <div class="btn-container">
+                        <a href="#" class="btn add-to-cart">ADD TO CART</a>
+                    </div>                
+                </div>
+    
+                <div class="card" data-name="Hand Bag" data-price="300">
+                    <img src="image/handbag.jpeg" alt="">
+                    <h3>Hand Bag</h3>
+                    <span>Rs. 300</span>
+                    <div class="btn-container">
+                        <a href="#" class="btn add-to-cart">ADD TO CART</a>
+                    </div>                
+                </div>
+    
+                <div class="card" data-name="Puppets" data-price="350">
+                    <img src="image/puppets.jpeg" alt="">
+                    <h3>Puppets</h3>
+                    <span>Rs. 350</span>
+                    <div class="btn-container">
+                        <a href="#" class="btn add-to-cart">ADD TO CART</a>
+                    </div>                
+                </div>
+    
+                <div class="card" data-name="Textiles" data-price="700">
+                    <img src="image/Textiles.jpeg" alt="">
+                    <h3>Textiles</h3>
+                    <span>Rs. 700</span>
+                    <div class="btn-container">
+                        <a href="#" class="btn add-to-cart">ADD TO CART</a>
+                    </div>                
+                </div>
+    
+                <div class="card" data-name="Miniature Painting" data-price="1000">
+                    <img src="image/paint.jpeg" alt="">
+                    <h3>Miniature Painting</h3>
+                    <span>Rs. 1000</span>
+                    <div class="btn-container">
+                        <a href="#" class="btn add-to-cart">ADD TO CART</a>
+                    </div>                
+                </div>
+    
+                <div class="card" data-name="Juthis" data-price="1000">
+                    <img src="image/juthis.avif" alt="">
+                    <h3>Juthis</h3>
+                    <span>Rs. 1000</span>
+                    <div class="btn-container">
+                        <a href="#" class="btn add-to-cart">ADD TO CART</a>
+                    </div>                
+                </div>
+    
+            </div>
+        </div>
+    <div class="horizontal-line2"></div>
+        </section>
+     <section>
+        <div class="contact" id="contact">
+            <div class="head2">
+                <h1>Contact <span>Us</span></h1>
+            </div>
+            <div class="contactUs">
+                <h3>Enter Your Details, We'll Connect with You</h3>
+                <input id="name" type="text" placeholder="Enter Your Name" required> <br>
+                <input id="mobile" type="text" placeholder="Enter Mobile Number" required> <br>
+                <button id="submitButton">Submit</button>
+            </div>
+        </div>
+    </section>
+<!-- --------To show the message that form has submitted --------- -->
+    <div id="messageOverlay" class="overlay" style="display: none;">
+        <div class="message">
+            <h2>Thank You!</h2>
+            <p>Our team will connect you soon</p>
+            <button id="closeButton">Close</button>
+        </div>
+    </div>
+   <!-- --------------------------------------------------------------- -->
+<section>
+        <div class="footer">
+            <div class="text">
+                <h2>About US</h2>
+                <p>The Indian Craft Store is a platform for those local  <br> artisanswho are not able to sell their products all over <br> the world.
+                    we are celebrating the "Amrit Mahotsav of  <br> independence" so this is the simple iniciative for <br>  supporting"Vocal for Loacal 
+                    products"and also our <br>  truley hardworking artisan. Indian handicrafts are <br>  world famous and every single person wants to buy <br> 
+                    the new handlooms , so the artisan store provides the <br>  proper platform for everyone "to come and buy" and <br>  "to come and sell".
+                </p>
+                </div>
+            <div class="text1">
+                <h2>Quick Links</h2>
+                <a href="#">Home</a>
+                <a href="#Products">Products</a>
+                <a href="#Festival Special">Festival Special</a>
+                <a href="#Home Decor">Home Decor</a>
+                <a href="#Places">Places</a>
+                <a href="#contact">Contact Us</a>
+             </div>
+            <div class="text2">
+                <h2>Contact Information</h2>
+                <a href="#">+91-8243567890</a>
+                <a href="#">IndianCraftStore@gmail.com</a>
+                <a href="#">Hyderabad, india - 482004 </a>
+    
+            </div>
+            <div class="text3">
+                <h2>Follow Us</h2>
+                <a href="#">facebook</a>
+                <a href="#">instagram</a>
+                <a href="#">twitter</a>
+                <a href="#">linkedin</a>
+            </div>
+        </div>
+    </section>
+<script src="script.js"></script>    
+    </body>
+</html>

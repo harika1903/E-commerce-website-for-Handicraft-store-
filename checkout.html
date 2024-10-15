@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Header */
+        header {
+            background-color:#C7253E;
+            color: #fff;
+            padding: 3px;
+            text-align: center;
+        }
+
+        /* Footer */
+        footer {
+            background-color:#C7253E;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Checkout Form */
+        .checkout-container {
+            padding: 20px;
+            max-width: 1000px;
+            margin: 20px auto;
+            background-color: #f4f4f4;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .checkout-container h1 {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input[type="text"], select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color:brown;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color:brown;
+        }
+
+        /* Confirmation Message */
+        .confirmation {
+            padding: 20px;
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+            border-radius: 5px;
+            margin-top: 20px;
+            display: none; /* Hidden by default */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Indian Handicraft store Checkout</h1>
+    </header>
+
+    <!-- Checkout Form -->
+    <div class="checkout-container" id="checkout-container">
+        <h1>Checkout</h1>
+        <form id="checkout-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="payment">Payment Method:</label>
+            <select id="payment" name="payment" required>
+                <option value="paypal">PayPal</option>
+            </select>
+
+            <button type="submit">Submit Order</button>
+        </form>
+
+        <!-- Confirmation Message -->
+        <div class="confirmation" id="confirmation-message">
+            <h2>Thank you for your order!</h2>
+            <p>Your order has been placed successfully. You will receive a confirmation email shortly.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Indian Handicraft store. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript to Handle Form Submission -->
+    <script>
+        document.getElementById('checkout-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from submitting the traditional way
+
+            // Hide the form and show the confirmation message
+            const checkoutContainer = document.getElementById('checkout-container');
+            const confirmationMessage = document.getElementById('confirmation-message');
+
+            // Hide the form by removing it or setting it to display: none
+            checkoutContainer.innerHTML = ''; // This clears the checkout form
+            checkoutContainer.appendChild(confirmationMessage); // Adds the confirmation message
+            confirmationMessage.style.display = 'block'; // Display the confirmation message
+        });
+    </script>
+</body>
+</html>
