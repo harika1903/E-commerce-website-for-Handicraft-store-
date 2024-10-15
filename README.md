@@ -1,5 +1,5 @@
 # Craft-Store
-The "Craft Store," an e-commerce application that  connects local artisans with customers seeking unique handmade  products. Developed using html, css, JavaScript.
+This website is an e-commerce application that connects local artisans with customers seeking unique handmade  products. Developed using html, css, JavaScript.
 
 This website has -:
 
@@ -12,8 +12,6 @@ Search Box: Quick and efficient product search functionality for seamless naviga
 Product Section: Display of products with clear and concise information, making it easy for customers to explore and make informed choices.
 
 Product Images: High-quality visuals that showcase products from various angles, aiding in better decision-making.
-
-Reviews: Customer feedback and ratings to build trust and provide valuable insights to potential buyers.
 
 Contact Us: An accessible way for users to get in touch with your business for inquiries or support.
 
